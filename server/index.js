@@ -22,9 +22,9 @@ app.use(cors({origin: process.env.CLIENT_URL, credentials: true}));
 app.use(express.json());
 app.use(cookieParser());
 
-app.get("/", (req, res) => {
-    res.status(200).send({ message: "Hello World!" });
-});
+// app.get("/", (req, res) => {
+//     res.status(200).send({ message: "Hello World!" });
+// });
 
 // routes
 app.use("/api/auth", authRoute);
