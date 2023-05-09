@@ -56,5 +56,4 @@ app.use((err, req, res, next)=> {
 app.listen(8000, (req, res)=>{
     connect();
     console.log('Server running successfully');
-    res.send("Server running successfully!")
 })
