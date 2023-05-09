@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-    res.send({ message: "Hello World!" });
+    res.status(200).send({ message: "Hello World!" });
 });
 
 // routes
