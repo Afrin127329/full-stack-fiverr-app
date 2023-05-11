@@ -35,9 +35,6 @@ const Reviews = ({ gigId }) => {
 
   return (
     <>
-      {currentUser.isSeller ? (
-        " "
-      ) : (
         <div className="reviews">
           <h2>Reviews</h2>
           {isLoading ? (
@@ -62,8 +59,8 @@ const Reviews = ({ gigId }) => {
                 {isLoading && <Loading type="bubbles" color="#013914" />}
             </form>
           </div>
-        </div>
-      )}
+      </div>
+      {!currentUser && "Please log in as a buyer to Provide a review."}
     </>
   );
 };

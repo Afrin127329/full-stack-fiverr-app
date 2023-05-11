@@ -1,7 +1,10 @@
 import axios from "axios";
 
 const newRequest = axios.create({
-  baseURL: import.meta.env.VITE_SERVER,
+  baseURL: "https://fiverr-clone-1.onrender.com/api/",
+  headers: {
+    "access-control-allow-origin": "*"
+  },
   withCredentials: true,
 });
 
