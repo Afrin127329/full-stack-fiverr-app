@@ -18,7 +18,7 @@ const app = express();
 dotenv.config();
 
 // middlewares
-app.use(cors({origin: "http://localhost:5173", credentials: true}));
+app.use(cors({origin: "https://full-stack-fiverr-app.vercel.app", credentials: true}));
 app.use(express.json());
 app.use(cookieParser());
 

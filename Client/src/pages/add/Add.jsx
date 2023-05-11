@@ -66,8 +66,6 @@ const Add = () => {
     
   };
 
-  console.log(state);
-
   return (
     <div className="add">
       <div className="container">
