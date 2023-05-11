@@ -57,7 +57,7 @@ const CheckoutForm = () => {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: import.meta.env.VITE_CLIENT + "success",
+        return_url: "https://full-stack-fiverr-app.vercel.app/" + "success",
       },
     });
     if (error.type === "card_error" || error.type === "validation_error") {
