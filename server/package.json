@@ -4,10 +4,13 @@
   "type": "module",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=14 <15"
+  },
   "scripts": {
     "start": "node index",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build"
+    "build": "yarn build"
   },
   "keywords": [],
   "author": "",
